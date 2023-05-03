@@ -1,0 +1,77 @@
+html {
+    height:10000px;
+    background-color: #0E4459;
+}
+
+.content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* GLOBAL */
+
+div {
+    display: block;
+}
+
+section {
+    display: block;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+/* HEADER */
+
+.logo-container {
+    width: 50%;
+    height: auto;
+
+}
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #0E4459;
+    display: flex;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    align-items: center;
+    float:right;
+    color: #ffffff;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+  #navbar a:hover {
+    color: #77D9BD;
+    border-color: #77D9BD;
+    border-radius: 5px;
+    border: 1px;
+    
+  }
+
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
