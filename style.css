@@ -129,3 +129,13 @@ body {
 #profile-photo{
     width:50%;
 }
+
+.flex-container {
+  display: flex;
+}
+
+.panel {
+  width:100px;
+  background-color: white;
+  padding: 10px;
+}
