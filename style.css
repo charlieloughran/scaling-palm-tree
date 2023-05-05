@@ -1,17 +1,12 @@
 html {
-    height:10000px;
     background-image: url("/Images/backgroundimage.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     
 }
 
-.container {
-	margin: 0 auto;
-}
-
 header {
-    padding-top:20px;
+    padding: 20px;
     background-color: #0E4459;
 
   }
@@ -40,10 +35,32 @@ section {
 
 body {
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Jost', sans-serif;
     color: white;
 
 }
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  max-width: 100%;
+}
+
+
+button {
+  background-color: #77D9BD;
+  color: white;
+  padding: 10px;
+  border: white;
+  border-radius: 50px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
 /* HEADER */
 
 .logo-container {
@@ -112,30 +129,56 @@ body {
   .content {
     padding: 16px;
   }
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    padding-top:20px;
-    background-color: #0E4459;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
 
-#profile-photo{
-    width:50%;
+
+.container {
+  display:flex;
+  width:80%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+
+.img-col {
+  width: 50%;
+  height:auto;
+  object-fit: contain;
+  justify-content: center;
+  order: 2;
+}
+
+.text-col {
+  order: 1;
+  padding: 20px;
 }
 
 .flex-container {
   display: flex;
+  overflow: scroll;
+  flex-direction: row;
+  
 }
 
-.panel {
-  width:100px;
+.portfolio-item {
+  list-style: none;
+  margin: 10px;
   background-color: white;
+  color:#0E4459;
   padding: 10px;
+  border-radius: 5px;
+}
+
+
+.panel ul{
+  padding: 10px;
+  margin: 10px;
+  display: inline;
+}
+
+.panel-image-size {
+  width:400px;
+  height: auto;
+  object-fit: contain;
+  padding: 0px;
 }

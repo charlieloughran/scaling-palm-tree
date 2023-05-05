@@ -6,85 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="navbar.js"></script>
     <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300&display=swap" rel="stylesheet">
     <title>Luachra</title>
     <link rel="icon" type="image/x-icon" href="docs/Logo/luachraLogo_v2.svg">
 </head>
 <body>
     <main>
     <header>
-        <div class="container">
-            <nav id="navbar">
-                <a href="index.html"><img src="./Logo/siteLogo.png" alt="Luachra Logo" class="logo-container">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-          <script src="/navbar.js"></script>
-        </div>
+        <nav id="navbar">
+            <a href="index.html"><img src="./Logo/siteLogo.png" alt="Luachra Logo" class="logo-container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <script src="/navbar.js"></script>
     </header>
 
     <section id="about">
-        <h2>About Me.</h2>
-        <p>I am currently a final year Digital Media student, at the University of Salford. I have a passion for creating and designing, with my main interests focused in UX/UI Design, Web Design and 3D Modelling. I also have experience in a variety of different media, as seen in my portfolio.
+        <div class="container">
+            <div class="img-col">
+                <img src="./Images/profilePhoto.png" alt="Charlie Loughran, Digital Designer">
+                <caption style="text-align:center;">Charlie Loughran, Digital Designer</caption>
+            </div>
+            <div class="text-col">
+                <h2>About Me.</h2>
+                <p>I am currently a final year Digital Media student, at the University of Salford. I have a passion for creating and designing, with my main interests focused in UX/UI Design, Web Design and 3D Modelling. I also have experience in a variety of different media, as seen in my portfolio.
 
-        <p>I aspire to create innovative, engaging and accessible content, whilst promoting new ways of retaining information in the most efficient and considerate way.</p>
-            
-        <p>Please view my portfolio below and if any of my work takes interest, please feel free to get in touch! </p>
-        <img id="profile-photo" src="./Images/profilePhoto.png" alt="Charlie Loughran">
-        <div class="button-container">
-            <button>View Portfolio</button>
-            <button>Contact Me</button>
+                <p>I aspire to create innovative, engaging and accessible content, whilst promoting new ways of retaining information in the most efficient and considerate way.</p>
+                    
+                <p>Please view my portfolio below and if any of my work takes interest, please feel free to get in touch! </p>
+                <div class="button-container">
+                    <button>View Portfolio</button>
+                    <button>Contact Me</button>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="flex-container">
-            <div class="portfolio-item">
-                <h3>ScriptMate</h3>
-                <h4>Mobile App Prototype</h4>
+        <ul class="flex-container panel">     
+            <li class="portfolio-item motiongraphics">
+                <img class="panel-image-size" src="/Images/PortfolioImages/JackGrealish.png">
+                <h3>Jack Grealish</h3>
+                <h4>Motion Graphics</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque hic eaque soluta, omnis at. Sint voluptatem nulla, beatae dolor cupiditate minima perferendis culpa consequatur in soluta explicabo veritatis odit?</p>
-                <img src="/Images/PortfolioImages/JackGrealish.png">
                 <button>More Info</button>
-            </div>
-            <div class="portfolio-item">
+            </li>
+            <li class="portfolio-item mobiledesign">
+                <img class="panel-image-size" src="/Images/PortfolioImages/HealEarth.png">
                 <h3>HealEarth</h3>
                 <h4>Mobile App Prototype</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque hic eaque soluta, omnis at. Sint voluptatem nulla, beatae dolor cupiditate minima perferendis culpa consequatur in soluta explicabo veritatis odit?</p>
-                <img src="/Images/PortfolioImages/JackGrealish.png">
                 <button>More Info</button>
-            </div>
-            <div class="portfolio-item">
+            </li>
+            <li class="portfolio-item mobiledesign">
+                <img class="panel-image-size" src="/Images/PortfolioImages/JackGrealish.png">
                 <h3>Historigin</h3>
                 <h4>Mobile App Prototype</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque hic eaque soluta, omnis at. Sint voluptatem nulla, beatae dolor cupiditate minima perferendis culpa consequatur in soluta explicabo veritatis odit?</p>
-                <img src="/Images/PortfolioImages/JackGrealish.png">
                 <button>More Info</button>
-            </div>
-            <div class="portfolio-item">
+            </li>
+            <li class="portfolio-item 3dvisual">
+                <img class="panel-image-size" src="/Images/PortfolioImages/Bare.png">
                 <h3>Bare Beauty</h3>
                 <h4>Web Design</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque hic eaque soluta, omnis at. Sint voluptatem nulla, beatae dolor cupiditate minima perferendis culpa consequatur in soluta explicabo veritatis odit?</p>
-                <img src="/Images/PortfolioImages/JackGrealish.png">
                 <button>More Info</button>
-            </div>
-            <div class="portfolio-item">
+            </li>
+            <li class="portfolio-item 3dvisual">
+                <img class="panel-image-size" src="/Images/PortfolioImages/HopeMill.png">
                 <h3>Hope Mill Theatre</h3>
                 <h4>3D Visualisation</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque hic eaque soluta, omnis at. Sint voluptatem nulla, beatae dolor cupiditate minima perferendis culpa consequatur in soluta explicabo veritatis odit?</p>
-                <img src="/Images/PortfolioImages/JackGrealish.png">
                 <button>More Info</button>
-            </div>
-            <div class="portfolio-item">
+            </li>
+            <li class="portfolio-item 3dvisual">
+                <img class="panel-image-size" src="/Images/PortfolioImages/ModernBedroom.png">
                 <h3>Modern Bedroom</h3>
                 <h4>3D Visualisation</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque hic eaque soluta, omnis at. Sint voluptatem nulla, beatae dolor cupiditate minima perferendis culpa consequatur in soluta explicabo veritatis odit?</p>
-                <img src="/Images/PortfolioImages/JackGrealish.png">
                 <button>More Info</button>
-            </div>
-        </div>
+            </li>
+        </ul>
+    </section>
+    <section id="#contact">
+        <h2>Let's work together</h2>
+        <form>
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="emailaddress">Email Address</label><br>
+            <input type="email" id="emailaddress" name="emailaddress"><br>
+            <input type="button" id="submitContact" name="submitbutton" value="Submit"><br>
+
+        </form>
     </section>
 
     
