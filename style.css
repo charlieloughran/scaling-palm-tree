@@ -1,8 +1,12 @@
-html {
+/* html {
     background-image: url("/Images/backgroundimage.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+
+*/
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -37,24 +41,32 @@ body {
     margin: 0 auto;
     font-family: 'Jost', sans-serif;
     color: white;
+    background-color: #0E4459;
 
 }
+
 
 img {
   max-width: 100%;
 }
 
-figure {
-  max-width: 100%;
+
+
+.btn {
+  border:#77D9BD 2px solid;
+  border-radius: 50px;
+  background-color: transparent;
+  color:white;
+  margin: 10px;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-
-button {
-  background-color: #77D9BD;
-  color: white;
-  padding: 10px;
-  border: white;
-  border-radius: 50px;
+.btn:hover {
+  border:#77D9BD 2px solid;
+  color:#77D9BD;
 }
 
 h2 {
@@ -126,7 +138,7 @@ h2 {
 
   
   /* Page content */
-  .content {
+.content {
     padding: 16px;
   }
 
@@ -153,7 +165,13 @@ h2 {
   padding: 20px;
 }
 
+.button-container {
+  padding-top: 40px;
+}
+
 .flex-container {
+  max-width: 100%;
+  padding:0px;
   display: flex;
   overflow: scroll;
   flex-direction: row;
@@ -161,24 +179,57 @@ h2 {
 }
 
 .portfolio-item {
+  max-width: 25%;
   list-style: none;
   margin: 10px;
-  background-color: white;
+  background-color:#ffffff;
   color:#0E4459;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  box-shadow: 5px 5px  #77D9BD ;
 }
 
-
-.panel ul{
-  padding: 10px;
-  margin: 10px;
-  display: inline;
-}
 
 .panel-image-size {
   width:400px;
   height: auto;
   object-fit: contain;
   padding: 0px;
+}
+
+.form-container {
+  display: flex;
+  margin-left:10%;
+  margin-right: 10%;
+  justify-content: center;
+  padding: 100px;
+  border:#77D9BD solid 2px;
+  background-color: transparent;
+
+}
+
+
+
+.contact-form {
+  width:80%;
+  margin: 0 auto;
+
+}
+
+.contact-form input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border:#77D9BD 2px solid;
+  background-color: transparent;
+  color:white;
+
+}
+
+#submitContact {
+  border-radius: 50px;
 }

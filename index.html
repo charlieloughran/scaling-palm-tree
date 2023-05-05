@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="navbar.js"></script>
     <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300&display=swap" rel="stylesheet">
-    <title>Luachra</title>
+    <title>Charlie Loughran</title>
     <link rel="icon" type="image/x-icon" href="docs/Logo/luachraLogo_v2.svg">
 </head>
 <body>
@@ -40,8 +41,8 @@
                     
                 <p>Please view my portfolio below and if any of my work takes interest, please feel free to get in touch! </p>
                 <div class="button-container">
-                    <button>View Portfolio</button>
-                    <button>Contact Me</button>
+                    <a class="btn portfolio" href="#portfolio">View Portfolio</a>
+                    <a class="btn contact" href="#contact">Contact Me</a>
                 </div>
 
             </div>
@@ -54,58 +55,56 @@
                 <img class="panel-image-size" src="/Images/PortfolioImages/JackGrealish.png">
                 <h3>Jack Grealish</h3>
                 <h4>Motion Graphics</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque hic eaque soluta, omnis at. Sint voluptatem nulla, beatae dolor cupiditate minima perferendis culpa consequatur in soluta explicabo veritatis odit?</p>
-                <button>More Info</button>
+                
             </li>
             <li class="portfolio-item mobiledesign">
                 <img class="panel-image-size" src="/Images/PortfolioImages/HealEarth.png">
                 <h3>HealEarth</h3>
                 <h4>Mobile App Prototype</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque hic eaque soluta, omnis at. Sint voluptatem nulla, beatae dolor cupiditate minima perferendis culpa consequatur in soluta explicabo veritatis odit?</p>
-                <button>More Info</button>
+                
             </li>
             <li class="portfolio-item mobiledesign">
                 <img class="panel-image-size" src="/Images/PortfolioImages/JackGrealish.png">
                 <h3>Historigin</h3>
                 <h4>Mobile App Prototype</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque hic eaque soluta, omnis at. Sint voluptatem nulla, beatae dolor cupiditate minima perferendis culpa consequatur in soluta explicabo veritatis odit?</p>
-                <button>More Info</button>
+                
             </li>
             <li class="portfolio-item 3dvisual">
                 <img class="panel-image-size" src="/Images/PortfolioImages/Bare.png">
                 <h3>Bare Beauty</h3>
                 <h4>Web Design</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque hic eaque soluta, omnis at. Sint voluptatem nulla, beatae dolor cupiditate minima perferendis culpa consequatur in soluta explicabo veritatis odit?</p>
-                <button>More Info</button>
+                
             </li>
             <li class="portfolio-item 3dvisual">
                 <img class="panel-image-size" src="/Images/PortfolioImages/HopeMill.png">
                 <h3>Hope Mill Theatre</h3>
                 <h4>3D Visualisation</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque hic eaque soluta, omnis at. Sint voluptatem nulla, beatae dolor cupiditate minima perferendis culpa consequatur in soluta explicabo veritatis odit?</p>
-                <button>More Info</button>
+                
             </li>
             <li class="portfolio-item 3dvisual">
                 <img class="panel-image-size" src="/Images/PortfolioImages/ModernBedroom.png">
                 <h3>Modern Bedroom</h3>
                 <h4>3D Visualisation</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque hic eaque soluta, omnis at. Sint voluptatem nulla, beatae dolor cupiditate minima perferendis culpa consequatur in soluta explicabo veritatis odit?</p>
-                <button>More Info</button>
+                
             </li>
         </ul>
     </section>
-    <section id="#contact">
-        <h2>Let's work together</h2>
-        <form>
-            <label for="fname">First Name</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last Name</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="emailaddress">Email Address</label><br>
-            <input type="email" id="emailaddress" name="emailaddress"><br>
-            <input type="button" id="submitContact" name="submitbutton" value="Submit"><br>
+    <section id="contact">
+            <div class="form-container">
+                <form class="contact-form">
+                    <h2>Let's work together</h2>
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="emailaddress">Email Address</label><br>
+                    <input type="email" id="emailaddress" name="emailaddress"><br>
+                    <label for="message">Message</label><br>
+                    <textarea name="message"></textarea>
+                    <input type="button" id="submitContact" name="submitbutton" value="Submit" class="btn"><br>
 
-        </form>
+                </form>
+            </div>
     </section>
 
     
