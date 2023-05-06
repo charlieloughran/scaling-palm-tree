@@ -81,10 +81,8 @@ h2 {
     display: block;
     padding: 30px;
     color: var(--white);
-}
-
-.menu a:hover{
-    background-color: var(--gray);
+    font-size: 20px;
+    text-align: center;
 }
 
 .nav {
@@ -131,6 +129,7 @@ h2 {
 .side-menu:checked ~ nav{
     max-height: 100%;
     background: var(--blue);
+    display:block;
 }
 .side-menu:checked ~ .hamb .hamb-line {
     background: var(--blue);
