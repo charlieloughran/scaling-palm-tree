@@ -20,7 +20,7 @@ html {
 }
 body{
     background-color: var(--blue);
-    font-family: "Jost", sans-serif;
+    font-family: 'Jost', sans-serif;
     color: var(--white)
 }
 a{
@@ -52,7 +52,7 @@ h2 {
 }
 
 .logo {
-    width: 400px;
+    width: 350px;
     padding: 15px;
     display: inline-block;
     height: auto;
@@ -143,59 +143,70 @@ h2 {
     top:0;
 }
 
-/* Responsiveness */
-@media (min-width: 768px) {
 
-    #navbar {
-        float: right;
-      
-        
-      }
-      
-      #navbar ul {
-          float:right;
-          list-style: none;
-          }
-      
-      #navbar li {
-        display: inline-block;
-        margin-left: 70px;
-        margin-right: 70px;
-        padding-bottom: 15px;
-        padding-top: 15px;
-      
+    /* Responsiveness */
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
         position: relative;
-      }
+        float: right;
+        width: fit-content;
+        padding: 0px;
+
+    }
+
+    .menu li {
+        display: inline-block;
+        position: relative;
+    }
       
-      #navbar a {
+    .menu a {
         color: #ffffff;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: large;
-      }
+        font-size: medium;
+    }
       
-      #navbar a:hover {
-        color: #77D9BD
-      }
+    .menu a:hover {
+        color: #77D9BD;
+        bottom: 0;
+    }
       
-      #navbar a::before {
+      .menu a::before {
         content: '';
         display: block;
         height: 5px;
         background-color: #77D9BD;
-      
-        position: absolute;
-        bottom: 0;
-        width: 0%;
+        position: relative;
+        top: 45px;
+        width: 0;
       
         transition: all ease-in-out 250ms;
       }
       
-      #navbar a:hover::before {
+      .menu a:hover::before {
         width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
       }
-      
+
     .hamb{
         display: none;
     }
 }
+
+/* Responsiveness */
+@media (max-width: 470px) {
+    .logo{
+        width: 250px;
+    }
+
+    .hamb {
+        padding: 30px 20px;
+    }
+
+}
+
+      
