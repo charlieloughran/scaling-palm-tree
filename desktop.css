@@ -1,0 +1,186 @@
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        padding: 0px;
+
+    }
+
+    .menu li {
+        display: inline-block;
+        position: relative;
+    }
+      
+    .menu a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: medium;
+    }
+      
+    .menu a:hover {
+        color: #77D9BD;
+        bottom: 0;
+    }
+      
+      .menu a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background-color: #77D9BD;
+        position: relative;
+        top: 45px;
+        width: 0;
+      
+        transition: all ease-in-out 250ms;
+      }
+      
+      .menu a:hover::before {
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+      }
+
+    .hamb{
+        display: none;
+    }
+
+    #about {
+        margin-bottom: 200px;
+    }
+    
+    
+    .container {
+      display:flex;
+      flex-wrap: wrap;
+      width:80%;
+      margin: auto;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    
+    }
+    
+    .img-col {
+      width: 50%;
+      height:auto;
+      object-fit: contain;
+      justify-content: center;
+      order: 2;
+    }
+    
+    .text-col {
+      order: 1;
+      padding: 20px;
+    }
+    
+    .button-container {
+      padding-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    /*============================================================ PORTFOLIO SECTION ===========================================================================================*/
+    
+    #portfolio {
+      margin-bottom: 200px;
+    
+    }
+    
+    .flex-container {
+      max-width: 100%;
+      justify-content: center;
+      padding:0px;
+      display: flex;
+      overflow: scroll;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
+    .portfolio-item {
+      max-width: 25%;
+      list-style: none;
+      margin: 10px;
+      background-color:#ffffff;
+      color:#0E4459;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 5px 5px  #77D9BD ;
+    }
+    
+    .portfolio-item:hover{
+      transform: rotate(90);
+    }
+    .clickable {
+      text-decoration: none;
+      color:#0E4459;
+    }
+    
+    
+    .panel-image-size {
+      width:400px;
+      height: auto;
+      object-fit: contain;
+      padding: 0px;
+    }
+    
+    /*============================================================ CONTACT SECTION ===========================================================================================*/
+    
+    #contact {
+    
+      margin-bottom: 200px;
+    }
+    
+    .form-container {
+      display: flex;
+      margin-left:10%;
+      margin-right: 10%;
+      justify-content: center;
+      padding: 100px;
+      border:#77D9BD solid 2px;
+      background-color: transparent;
+    
+    }
+    
+    
+    
+    .contact-form {
+      width:80%;
+      margin: 0 auto;
+    
+    }
+    
+    .contact-form input, textarea {
+      width: 100%;
+      padding: 12px 20px;
+      font-size: large;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      border:#77D9BD 2px solid;
+      background-color: transparent;
+      color:white;
+    
+    }
+    
+    #submitContact {
+      border-radius: 50px;
+      margin-top: 40px;
+    }
+    
+    /*============================================================ FOOTER ===========================================================================================*/
+    
+    footer {
+      background-color: #0E4459;
+      color: white;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+
+
+}
