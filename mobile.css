@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    height:1000px;
 }
 
 /* GLOBAL */
@@ -296,6 +297,8 @@ footer {
   padding-bottom: 50px;
 }
 
+
+
 /* Responsiveness */
 @media (max-width: 470px) {
     .logo{
@@ -306,6 +309,6 @@ footer {
         padding: 30px 20px;
     }
 
-}
 
-      
+}
+/*====================================  MOTION PAGE =======================================*/
