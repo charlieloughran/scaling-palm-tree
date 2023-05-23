@@ -196,6 +196,20 @@
       color:white;
     
     }
+
+    .contact-form input, textarea {
+      width: 100%;
+      padding: 12px 20px;
+      font-size: large;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      border:#77D9BD 2px solid;
+      background-color: transparent;
+      color:white;
+    
+    }
     
     #submitContact {
       border-radius: 50px;
