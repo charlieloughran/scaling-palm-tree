@@ -6,7 +6,8 @@ html {
 /* GLOBAL */
 
 :root{
-    --blue:  #0E4459;
+    --background:  #FFFFFF;
+    --blue: #0E4459;
     --green: #77D9BD;
     --white: #f2f2f2;
 } /* variables*/
@@ -18,7 +19,7 @@ html {
     box-sizing: border-box;
 }
 body{
-    background-color: var(--blue);
+    background-color: var(--background);
     font-family: 'Jost', sans-serif;
     color: var(--white)
 }
